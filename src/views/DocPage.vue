@@ -101,7 +101,7 @@ aside {
 main {
   overflow: auto;
   padding: 16px;
-  background: lightyellow;
+  background: white;
   overflow-y: auto;
 
 }

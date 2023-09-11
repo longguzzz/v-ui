@@ -3,10 +3,10 @@ import DocPageVue from "./views/DocPage.vue";
 import HomePageVue from "./views/HomePage.vue";
 
 import DocVue from "./components/DefaultDoc.vue";
-import SwitchVue from "./components/Switch.vue";
-import ButtonVue from "./components/Button.vue";
-import DialogVue from "./components/Dialog.vue";
-import TabsVue from "./components/Tabs.vue";
+import SwitchVue from "./components/SwitchDemo.vue";
+import ButtonVue from "./components/ButtonDemo.vue";
+import DialogVue from "./components/DialogDemo.vue";
+import TabsVue from "./components/TabsDemo.vue";
 
 const history = createWebHistory();
 const router = createRouter({
