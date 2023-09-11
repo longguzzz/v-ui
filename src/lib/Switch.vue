@@ -1,8 +1,8 @@
 <template>
   <button
-    class="animation-switch"
+    class="vui-switch vui-switch-animation"
     @click="toggle"
-    :class="{ checked: selected }"
+    :class="{ 'vui-checked': selected }"
   >
     <span> </span>
   </button>
@@ -28,10 +28,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
-button {
+.vui-switch {
   position: relative;
 
   height: $h;
@@ -55,7 +55,7 @@ button {
   }
 }
 
-.animation-switch {
+.vui-switch-animation {
   > span {
     transition: all 250ms;
   }
@@ -64,10 +64,10 @@ button {
     outline: none;
   }
 
-  &.checked {
+  &.vui-checked {
     background: #1890ff;
   }
-  &.checked > span {
+  &.vui-checked > span {
     left: calc(100% - #{$h2} - 2px);
   }
   &:active {
@@ -75,7 +75,7 @@ button {
       width: $h2 + 4px;
     }
   }
-  &.checked:active {
+  &.vui-checked:active {
     > span {
       width: $h2 + 4px;
       margin-left: -4px;
